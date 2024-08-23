@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+
+:root{
+    --primary-color:#00c2de;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -6,4 +12,74 @@
 
 body{
     background: #000;
+    font-family: "Racing Sans One", sans-serif;
 }
+
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    z-index: 1000;
+}
+
+header::after{
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+    width: 40%;
+    height: 5px;
+    background: linear-gradient(90deg, var(--primary-color), transparent);
+}
+
+.logo{
+    font-size: 30px;
+    color: #fff;
+}
+
+header img{
+    max-width: 200px;
+    filter: invert(1);
+}
+
+header .years{
+    font-family: "Racing Sans One", cursive;
+    font-size: 1em;
+    font-weight: 800;
+    color: #fff;
+    margin-top: 40px;
+    letter-spacing: 1px;
+}
+
+header .menu{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    background: url('../images/menu-3-fill.png');
+    background-size: 30px;
+    background-position: center;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+header .menu.active{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    background: url('../images/close-line.png');
+    background-size: 30px;
+    background-position: center;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+
+
+
