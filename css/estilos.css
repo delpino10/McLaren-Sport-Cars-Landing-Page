@@ -330,3 +330,33 @@ header .menu.active{
     color: var(--primary-color);
     margin: 0;
 }
+
+
+/* Socials */
+
+.socials{
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.socials li{
+    list-style: none;
+}
+
+.socials li a {
+    color: #fff;
+    font-size: 1em;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.socials li a:hover{
+    color: var(--primary-color);
+}
