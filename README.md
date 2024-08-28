@@ -12,6 +12,6 @@
 - Javascript
 - Jquery
 ---
-Link: https://delpino10.github.io/McLaren-Sport-Cars-Landing-Page/#
+**Link:** https://delpino10.github.io/McLaren-Sport-Cars-Landing-Page/#
 
 
